@@ -12,7 +12,7 @@ body {
   background-color: hsl(229, 24%, 87%);
 }
 
-.form-container {  
+.form-container {
   max-width: 860px;
   margin: 50px auto;
   display: flex;
@@ -631,6 +631,7 @@ input:checked + .slider:before {
   color: hsl(243, 100%, 62%);
   text-decoration: underline;
 }
+ 
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -690,7 +691,11 @@ input:checked + .slider:before {
 
   .back,
   .go-back {
+    /* Make back buttons full-width and reset margin for stacking */
+    width: 100%;
+    margin-left: 0;
     margin-top: 0;
+    padding: 11px 0; /* Add padding for consistent height and touch area */
   }
 
   .thank-you {
@@ -707,7 +712,8 @@ input:checked + .slider:before {
   .btn,
   .step-buttons,
   .nav-buttons {
-    flex-direction: column;
-    gap: 10px; /* Reduce the gap between buttons */
+    flex-direction: column-reverse; /* Stack buttons vertically, primary action last */
+    justify-content: initial;      /* Reset space-between from desktop style */
+    gap: 15px;                     /* Space between stacked buttons */
   }
 }
