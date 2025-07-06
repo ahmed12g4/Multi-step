@@ -688,11 +688,6 @@ input:checked + .slider:before {
     margin-top: 30px;
   }
 
-  .btn {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .back,
   .go-back {
     margin-top: 0;
@@ -702,21 +697,7 @@ input:checked + .slider:before {
     margin-left: 0;
   }
 
-  .step-number-active,
-  .step-number {
-    width: 30px;
-    height: 30px;
-    font-size: 0.9rem;
-  }
-
   .btn,
-  .step-buttons {
-    flex-direction: column;
-    gap: 10px; /* Reduce the gap between buttons */
-  }
-}
-
-
   .step-number-active,
   .step-number {
     width: 30px;
@@ -730,5 +711,4 @@ input:checked + .slider:before {
     flex-direction: column;
     gap: 10px; /* Reduce the gap between buttons */
   }
-
- 
+}
